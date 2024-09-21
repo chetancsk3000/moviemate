@@ -1,0 +1,160 @@
+/* General styles */
+.desktop {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .overlap-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 1024px;
+}
+
+.desktop .overlap {
+  position: relative;
+  height: 1024px;
+  background-color: #d9d9d9;
+  background-image: url(./img/AI-generated-image-2024-09-20-464510893020201-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop .text-wrapper {
+  margin-top: 66px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 46px;
+  line-height: 69px;
+}
+
+.desktop .sign-up-details {
+  width: 422px;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.desktop .div {
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 25.4px;
+  line-height: 46.6px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.desktop .overlap-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  background-color: white;
+  transition: box-shadow 0.3s;
+}
+
+.desktop .overlap-group .text-wrapper-3 {
+  color: #070808;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.desktop .overlap-group .text-wrapper-4 {
+  color: #000000;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.desktop .overlap-group:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal input[type="text"], .modal input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #45a049;
+}
+
+#signInBtn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signInBtn:hover {
+  background-color: #0c0c0c;
+}
