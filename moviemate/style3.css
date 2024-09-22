@@ -1,0 +1,195 @@
+.netflix,
+.netflix * {
+  box-sizing: border-box;
+}
+.netflix {
+  background: #000000;
+  height: 2250px; /* Adjust as needed */
+  position: relative;
+  overflow: hidden;
+}
+.netflix-1 {
+  width: 1471px;
+  height: 988px;
+  position: absolute;
+  left: -31px;
+  top: 36px;
+  object-fit: cover;
+}
+.success-code-of-netflix-original-movies-4247-e-014-48-da-4803-8-de-2-cc-9-b-94869991 {
+  border-radius: 30px;
+  width: 383px;
+  height: 283px;
+  position: absolute;
+  left: 143px;
+  top: 208px;
+  object-fit: cover;
+}
+.success-code-of-netflix-original-movies-4247-e-014-48-da-4803-8-de-2-cc-9-b-948699912 {
+  border-radius: 30px;
+  width: 383px;
+  height: 283px;
+  position: absolute;
+  left: 143px;
+  top: 208px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+.netflix2 {
+  color: #ffffff;
+  text-align: center; /* Centered below the menu */
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative; /* Changed from absolute */
+  margin-top: 20px; /* Space below upper menu */
+}
+.disney-hotstar {
+  border-radius: 30px;
+  width: 383px;
+  height: 283px;
+  position: absolute;
+  left: 560px;
+  top: 208px;
+  object-fit: cover;
+}
+.roohis-creatives-4-2 {
+  border-radius: 30px;
+  width: 383px;
+  height: 283px;
+  position: absolute;
+  left: 977px;
+  top: 208px;
+  object-fit: cover;
+}
+.unnamed {
+  border-radius: 30px;
+  width: 383px;
+  height: 283px;
+  position: absolute;
+  left: 143px;
+  top: 533px;
+  object-fit: cover;
+}
+.unnamed2 {
+  border-radius: 30px;
+  width: 383px;
+  height: 283px;
+  position: absolute;
+  left: 560px;
+  top: 533px;
+  object-fit: cover;
+}
+.zee-5-logo {
+  border-radius: 30px;
+  width: 383px;
+  height: 283px;
+  position: absolute;
+  left: 977px;
+  top: 533px;
+  object-fit: cover;
+}
+.buttons-container {
+  background: var(--black-06, #0f0f0f);
+  border-radius: 12px;
+  border-style: solid;
+  border-color: var(--black-12, #1f1f1f);
+  border-width: 4px;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 440px;
+  position: absolute;
+  left: calc(50% - 220px);
+  top: 50px; /* Adjusted for proper placement */
+  overflow: hidden;
+}
+.text-button {
+  color: var(--grey-75, #bfbfbf);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+}
+.button {
+  background: var(--black-10, #1a1a1a);
+  border-radius: 8px;
+  border-style: solid;
+  border-color: var(--black-10, #1a1a1a);
+  border-width: 1px;
+  padding: 14px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  color: var(--absolute-white, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+}
+.menu {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 70px;
+  top: 86px;
+  overflow: visible;
+}
+.pk {
+  width: 294px;
+  height: 389px;
+  position: absolute;
+  left: 83px;
+  top: 1254px;
+  object-fit: cover;
+}
+.mv-5-b-nm-nm-mw-my-zt-ut-nd-rh-zc-00-od-ix-l-tgy-n-dkt-yj-m-0-nty-2-zwy-4-nm-mz-xk-ey-xk-fqc-gc-v-1 {
+  width: 294px;
+  height: 389px;
+  position: absolute;
+  left: 500px;
+  top: 1254px;
+  object-fit: cover;
+}
+.war {
+  width: 294px;
+  height: 389px;
+  position: absolute;
+  left: 83px;
+  top: 1760px;
+  object-fit: cover;
+}
+.baahubali-1 {
+  width: 294px;
+  height: 389px;
+  position: absolute;
+  left: 500px;
+  top: 1760px;
+  object-fit: cover;
+}
+
+/* Hover effects for images */
+.success-code-of-netflix-original-movies-4247-e-014-48-da-4803-8-de-2-cc-9-b-94869991:hover,
+.success-code-of-netflix-original-movies-4247-e-014-48-da-4803-8-de-2-cc-9-b-948699912:hover,
+.disney-hotstar:hover,
+.roohis-creatives-4-2:hover,
+.unnamed:hover,
+.unnamed2:hover,
+.zee-5-logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

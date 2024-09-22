@@ -1,0 +1,93 @@
+.home-page {
+    background-color: #000000; /* Full black background */
+    min-height: 100vh; /* Ensures full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    position: relative; /* For proper positioning of header */
+}
+
+.home-header {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    padding: 20px 0;
+    position: absolute; /* Fix header at the top */
+    top: 0; /* Align it to the top */
+}
+
+.buttons-container {
+    background: var(--black-06, #0f0f0f);
+    border-radius: 12px;
+    border: 4px solid var(--black-12, #1f1f1f);
+    padding: 10px 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.text-button {
+    color: var(--grey-75, #bfbfbf);
+    font-family: "Manrope-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button {
+    background: var(--black-10, #1a1a1a);
+    border-radius: 8px;
+    border: 1px solid var(--black-10, #1a1a1a);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.text {
+    color: var(--absolute-white, #ffffff);
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px; /* Increased space for the fixed header */
+}
+
+.img-row {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.img-container {
+    margin: 0 10px;
+}
+
+.img-container img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-container button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.img-container:hover img {
+    transform: scale(1.05);
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Fusion-Sign Up</title>
+</head>
+<body>
+    <style>
+        .welcome-section {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          min-height: 1024px;
+          width: 100%;
+          padding: 72px 0 0;
+          align-items: center;
+        }
+        
+        .background-image {
+          position: absolute;
+          inset: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+        
+        .welcome-title {
+          position: relative;
+          color: #fff;
+          font-size: 46px;
+        }
+        
+        .welcome-subtitle {
+          position: relative;
+          color: #fff;
+          font-size: 25px;
+          font-weight: 600;
+          line-height: 47px;
+          margin-top: 32px;
+        }
+        
+        .signup-button {
+          position: relative;
+          width: 109px;
+          border-radius: 5px;
+          background-color: #fff;
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.084);
+          height: 30px;
+          max-width: 100%;
+          font-size: 13px;
+          color: #000;
+          line-height: 48px;
+          margin: 33px 0 0 -2px;
+          padding: 0 7px;
+        }
+        
+        .or-text {
+          position: relative;
+          color: #fff;
+          font-size: 19px;
+          font-weight: 400;
+          line-height: 1;
+          margin-top: 33px;
+        }
+        
+        .social-button {
+          position: relative;
+          border-radius: 9px;
+          display: flex;
+          margin-top: 20px;
+          width: 300px;
+          max-width: 100%;
+          align-items: center;
+          gap: 13px;
+          justify-content: flex-start;
+          padding: 13px;
+          font-size: 17px;
+        }
+        
+        .google-button {
+          background-color: #fff;
+          color: rgba(0, 0, 0, 0.54);
+          font-family: Roboto, sans-serif;
+        }
+        
+        .facebook-button {
+          background-color: #1877f2;
+          color: #fff;
+          font-family: Helvetica, sans-serif;
+          font-weight: 700;
+          margin-top: 24px;
+        }
+        
+        .social-icon {
+          aspect-ratio: 1;
+          object-fit: contain;
+          object-position: center;
+          width: 21px;
+        }
+        
+        .login-section {
+          position: relative;
+          display: flex;
+          margin-top: 27px;
+          width: 221px;
+          max-width: 100%;
+          gap: 8px;
+          font-size: 13px;
+          line-height: 2;
+        }
+        
+        .login-text {
+          color: #fff;
+          flex-grow: 1;
+        }
+        
+        .login-link {
+          color: #fff762;
+        }
+        
+        .features-section {
+          position: relative;
+          border-radius: 120px;
+          background-color: rgba(217, 217, 217, 0.89);
+          align-self: stretch;
+          display: flex;
+          margin-top: 260px;
+          width: 100%;
+          align-items: center;
+          gap: 20px;
+          font-size: 18px;
+          color: #000;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 24px 79px 0;
+        }
+        
+        .feature-column {
+          align-self: stretch;
+          display: flex;
+          flex-direction: column;
+          margin: auto 0;
+        }
+        
+        .feature-item {
+          margin: 29px 11px 0;
+        }
+        
+        .services-column {
+          align-self: stretch;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .services-divider {
+          margin-top: 13px;
+          width: 193px;
+          height: 3px;
+          border: 1px solid #000;
+        }
+        
+        .service-item {
+          margin-top: 25px;
+        }
+        
+        .service-description {
+          align-self: stretch;
+          margin-top: 27px;
+        }
+        
+        @media (max-width: 991px) {
+          .welcome-section {
+            max-width: 100%;
+          }
+        
+          .welcome-title {
+            max-width: 100%;
+            font-size: 40px;
+          }
+        
+          .features-section {
+            max-width: 100%;
+            margin-top: 40px;
+            padding: 0 20px;
+          }
+        
+          .feature-item {
+            margin: 0 10px;
+          }
+        
+          .services-column,
+          .service-description {
+            max-width: 100%;
+          }
+        
+          .feature-column:last-child {
+            white-space: initial;
+          }
+        }
+        
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+        </style>
+        
+        <section class="welcome-section">
+          <img src="" alt="" class="background-image" />
+          <h1 class="welcome-title">Welcome to Film Fusion</h1>
+          <p class="welcome-subtitle">Get Started With Film Fusion</p>
+          
+          <form>
+            <label for="signupButton" class="visually-hidden">Sign Up</label>
+            <button id="signupButton" class="signup-button">Sign Up</button>
+          </form>
+          
+          <p class="or-text">Or continue with</p>
+          
+          <button class="social-button google-button">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0cee4f9a9c27e655724328ec89dffdd5e4598e5ae90ea0154f3763b5ef74de12?placeholderIfAbsent=true&apiKey=8d2dacf1043242649ea165371ea2ce54" alt="" class="social-icon" />
+            <span>Sign Up with Google</span>
+          </button>
+          
+          <button class="social-button facebook-button">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6df66cb41398e5c6559e4311363ac61be086b3d273568a0c8006cec3b741ce44?placeholderIfAbsent=true&apiKey=8d2dacf1043242649ea165371ea2ce54" alt="" class="social-icon" />
+            <span>Sign In with Facebook</span>
+          </button>
+          
+          <div class="login-section">
+            <p class="login-text">Already have an account?</p>
+            <a href="#" class="login-link">Log in</a>
+          </div>
+          
+          <div class="features-section">
+            <div class="feature-column">
+              <p>Stream Room</p>
+              <p class="feature-item">Chat Room</p>
+            </div>
+            <div class="services-column">
+              <p>OUR SERVICES</p>
+              <div class="services-divider"></div>
+              <p class="service-item">OTT View</p>
+              <p class="service-item">Game Room</p>
+              <p class="service-description">Exclusive Discounts on Movies and Ticket Prices</p>
+            </div>
+            <div class="feature-column">
+              <p>Debates</p>
+              <p class="feature-item">News</p>
+            </div>
+          </div>
+        </section>
+</body>
+</html>

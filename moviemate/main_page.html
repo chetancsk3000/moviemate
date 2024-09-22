@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Film Fusion - Sign Up</title>
+    <style>
+        /* Add this to your existing CSS or include it here */
+        .email-input {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .email-input input[type="email"] {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+        }
+
+        #signUpForm input[type="text"],
+        #signUpForm input[type="password"],
+        #signUpForm .email-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #signUpForm .email-input input[type="email"] {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <div class="overlap-wrapper">
+            <div class="overlap">
+                <div class="text-wrapper">Welcome to Film Fusion</div>
+                <div class="sign-up-details">
+                    <p class="div">Get Started With Film Fusion</p>
+                    <br><br>
+                    <!-- Sign Up button -->
+                    <button id="signUpBtn">Sign Up</button>
+                    <br><br>
+                    <!-- Google sign up button -->
+                    <div class="group" onclick="handleGoogleSignUp()">
+                        <div class="overlap-group">
+                            <img class="google" src="img/google-1.svg" alt="Google Logo" />
+                            <div class="text-wrapper-3">Google</div>
+                        </div>
+                    </div>
+                    <!-- Facebook sign up button -->
+                    <div class="overlap-group-wrapper" onclick="handleFacebookSignUp()">
+                        <div class="overlap-group">
+                            <img class="facebook" src="img/facebook-1.svg" alt="Facebook Logo" />
+                            <div class="text-wrapper-4">Facebook</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up Modal -->
+        <div id="signUpModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signUpForm" action="insert.php" method="POST">
+                    <input type="text" placeholder="Full Name" name="fullname" required id="username"/>
+                    <div class="email-input">
+                        <input type="email" placeholder="Email" name="email" required id="email"/>
+                    </div>
+                    <input type="password" placeholder="Password" name="password" required id="password"/>
+                    <input type="password" placeholder="Confirm Password" name="confirm_password" required id="confirm_password" />
+                    <button type="submit" id="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get modal element
+        var modal = document.getElementById("signUpModal");
+        // Get button to open the modal
+        var btn = document.getElementById("signUpBtn");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "flex"; // Show modal
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none"; // Hide modal
+        }
+
+        // When the user clicks anywhere outside the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none"; // Hide modal
+            }
+        }
+
+        // Placeholder functions for Google and Facebook sign-up
+        function handleGoogleSignUp() {
+            alert("Google Sign-Up button clicked!");
+        }
+
+        function handleFacebookSignUp() {
+            alert("Facebook Sign-Up button clicked!");
+        }
+
+        // Form submit and redirect to the home page
+        document.getElementById('signUpForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submit behavior
+            
+            // Basic password match validation
+            var password = this.password.value;
+            var confirmPassword = this.confirm_password.value;
+            
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+            
+            // If passwords match, proceed to home page
+            window.location.href = "home_page.html"; // Redirect to home page
+        });
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+        import { getDatabase,ref,set,get,child } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDy4nM0_Q_nodR2CgYU0tbTUtB7uO6WqLo",
+          authDomain: "moviemate-7a809.firebaseapp.com",
+          databaseURL: "https://moviemate-7a809-default-rtdb.firebaseio.com",
+          projectId: "moviemate-7a809",
+          storageBucket: "moviemate-7a809.appspot.com",
+          messagingSenderId: "773983054366",
+          appId: "1:773983054366:web:729f1ed802a77f03fd5c0f"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = detDatabase(app);
+        document.getElementById("submit").addEventListener('click',function(e){
+            e.preventDefault();
+            set(ref(db, 'user/' + document.getElementById("username").value),
+        {
+            username: document.getElementById("username").value,
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+            confirm_password: document.getElementById("confirm_password").value
+        });
+        alert("Login Successfull...!");
+        })
+      </script>
+</body>
+</html>

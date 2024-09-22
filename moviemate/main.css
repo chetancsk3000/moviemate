@@ -1,0 +1,107 @@
+/* Keeping your original layout as requested */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Full-page layout */
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlap-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    position: relative;
+}
+
+.overlap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.338); /* Dark transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttons-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 48px;
+    left: 511px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.button, .text-button {
+    all: unset;
+    box-sizing: border-box;
+    padding: 14px 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text-button {
+    flex: 1;
+    background-color: transparent;
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 71px;
+    left: 159px;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+.frame {
+    position: absolute;
+    width: 1217px;
+    top: 206px;
+    left: 131px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
